@@ -21,7 +21,7 @@
 
     如果想编译运行 `pythia8/example` 目录下的示例代码, 最好额外指定 `HepMC2`、`LHAPDF6` 等外部库, 指定的方法可以运行 `./configure --help` 查询. 
 
-4. 打开 [`build.sh`](build.sh) 脚本, 指定 `HEPMC2_DIR` 的值, `HEPMC2_DIR` 指向 `HEPMC2` 安装的根目录. 然后运行 `build.sh` 脚本编译示例代码.
+4. 编辑 [`build.sh`](build.sh) 脚本, 指定 `HEPMC2_DIR` 的值, `HEPMC2_DIR` 指向 `HEPMC2` 安装的根目录. 然后运行 `build.sh` 脚本编译示例代码.
 
 ## 2. 使用说明
 
