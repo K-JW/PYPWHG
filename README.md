@@ -13,10 +13,10 @@
 
 2. 使用 `SVN` 下载 `POWHEG-BOX` 公共部分代码及感兴趣过程的代码, 示例脚本在 [`get_powheg.sh`](3rdparty/get_powheg.sh) 给出. **如果需要使用 [LHAPDF6](https://lhapdf.hepforge.org/), 则需要将 `Makefile` 中的 `PDF=native` 修改为 `PDF=lhapdf`.**
 
-3. 编译 `Pythia8` 库. 首先需要指定配置信息, 来生成适应当前平台的 `Makefile` 文件. 具体命令如下:
+3. 编译 `Pythia8` 库. 首先需要指定配置信息, 来生成适应当前平台的 `Makefile` 文件并编译. 具体命令如下:
 
     ```bash
-    ./configure
+    ./configure && make -j4
     ```
 
     如果想编译运行 `pythia8/example` 目录下的示例代码, 最好额外指定 `HepMC2`、`LHAPDF6` 等外部库, 指定的方法可以运行 `./configure --help` 查询. 
